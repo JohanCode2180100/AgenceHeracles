@@ -1,0 +1,31 @@
+body {
+  font-family: open sans, Arial, Helvetica, sans-serif;
+  height: 100vh;
+}
+
+.grid-accueil {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template: 70px 500px minmax(300px, 1fr) / 600px 1fr 600px;
+}
+.menu {
+  grid-area: 1/1/2/-1;
+  background-color: black;
+}
+.presentation {
+  grid-area: 2/1/3/2;
+  background: red;
+}
+.slider {
+  grid-area: 2/2/3/-1;
+  background: blue;
+}
+.choix {
+    background: yellow;
+    grid-area: 3/1/4/3;
+}
+.contatc{
+    grid-area: 3/3/4/4;
+    background: pink;
+}
